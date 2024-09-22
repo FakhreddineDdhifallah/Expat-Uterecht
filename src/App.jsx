@@ -1,4 +1,4 @@
-import "./layout.scss"
+import "./routes/layout/layout"
 import HomePage from "./routes/homePage/homePage"
 import ListPage from "./routes/listPage/listPage.jsx"
 
