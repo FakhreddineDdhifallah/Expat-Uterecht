@@ -1,13 +1,11 @@
-import Navbar from "./components/navbar/Navbar.jsx"
 import "./layout.scss"
-import HomePage from "./routes/homePage.jsx"
-import ListPage from "./routes/listPage.jsx"
+import HomePage from "./routes/homePage/homePage"
+import ListPage from "./routes/listPage/listPage.jsx"
 
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
+  
 } from "react-router-dom";
 
 function App() {
@@ -15,7 +13,7 @@ function App() {
     {
       path: "/",
       element: 
-        <HomePage />
+        <HomePage /> 
       
     },
     {
