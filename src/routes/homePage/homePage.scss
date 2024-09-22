@@ -1,4 +1,4 @@
-@import  "../responsive.scss" ;
+ @import  "../../responsive.scss" ;
 
 .homePage{
     display: flex;
@@ -17,9 +17,12 @@
             gap: 50px;
             height: 100%;
 
-            @include {
+            @include md{
                 padding: 0;
                  
+            }
+            @include sm{
+                justify-content: flex-start;
             }
             }
 
@@ -35,6 +38,10 @@
             .boxes{
                 display: flex;
                 justify-content: space-between ;
+
+                @include sm{
+                    display: none;
+                }
                 
 
                 h1{
@@ -53,7 +60,7 @@
             }
 
         }
-    }
+    
 
 
     .imgContainer {
@@ -77,4 +84,3 @@
             width: 105%;
         }
     }
-}
